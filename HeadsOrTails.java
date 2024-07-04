@@ -1,8 +1,14 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class HeadsOrTails {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Who are you? ");
+        String userName = scanner.nextLine();
+        System.out.println("Hello, " + userName + "!");
+        
         Random random = new Random();
         System.out.println("Tossing a coin...");
         int headsCount = 0;
